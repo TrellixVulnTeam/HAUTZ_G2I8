@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+{% load static %}
+
+{% block title %} Login {% endblock %}
+
+{% block main %}
+
+    <div class="row">
+        <div class="col-sm">
+        
+        </div>
+        <div class="col-sm">
+
+            <img src="logo.jpg" alt="Faça seu login" width=60 height=40>
+            <h2><center>Login</center></h2>
+                <form method="POST">
+
+            {% csrf_token %}
+            {{ form|bootstrap }}
+            <button type="submit" class="btn btn-info">Login</button>
+
+        </div>
+        <div class="col-sm">
+
+    </form>
+
+{% endblock %}
+
+
+
