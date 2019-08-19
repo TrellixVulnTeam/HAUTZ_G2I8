@@ -76,6 +76,16 @@ WSGI_APPLICATION = 'gestao_clientes.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# Deixei a conexão com o MySql comentada, para ficar mais simples a modificação.
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}
+
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
@@ -86,6 +96,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
